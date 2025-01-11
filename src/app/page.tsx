@@ -1,3 +1,10 @@
+import { Header, Main } from '@layoutComponents';
+
 export default function Home() {
-    return <></>;
+    return (
+        <>
+            <Header />
+            <Main />
+        </>
+    );
 }
