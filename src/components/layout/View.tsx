@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 
 interface ViewProps {
     id: string;
-    styles: string;
+    styles?: string;
     children?: ReactNode;
 }
 

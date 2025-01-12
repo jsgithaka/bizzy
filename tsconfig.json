@@ -23,6 +23,7 @@
             "@layoutStyles": ["./src/exports/styles/layout.ts"],
             "@sharedComponents": ["./src/exports/components/shared.ts"],
             "@sharedStyles": ["./src/exports/styles/shared.ts"],
+            "@viewsComponents": ["./src/exports/components/views.ts"],
             "@fonts": ["./src/exports/fonts.ts"],
             "@/*": ["./src/*"]
         }
