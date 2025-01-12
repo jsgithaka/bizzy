@@ -1,10 +1,13 @@
-import { Header, Main } from '@layoutComponents';
+import { Container, Header, Main, Footer } from '@layoutComponents';
 
 export default function Home() {
     return (
         <>
             <Header />
-            <Main />
+            <Main>
+                <Container />
+                <Footer />
+            </Main>
         </>
     );
 }

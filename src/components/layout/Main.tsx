@@ -1,5 +1,14 @@
 import { MainStyles } from '@layoutStyles';
+import { ReactNode } from 'react';
 
-export default function Main() {
-    return <main className={[MainStyles.Main, 'Layout'].join(' ')}></main>;
+interface MainProps {
+    children: ReactNode;
+}
+
+export default function Main({ children }: MainProps) {
+    return (
+        <main className={[MainStyles.Main, 'Layout'].join(' ')}>
+            {children}
+        </main>
+    );
 }
