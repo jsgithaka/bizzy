@@ -1,3 +1,5 @@
+import { ContainerStyles } from '@layoutStyles';
+
 export default function Container() {
-    return <section></section>;
+    return <section className={ContainerStyles.Container}></section>;
 }
