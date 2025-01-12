@@ -1,3 +1,7 @@
+import { HeaderStyles } from '@layoutStyles';
+
 export default function Header() {
-    return <header></header>;
+    return (
+        <header className={[HeaderStyles.Header, 'Layout'].join(' ')}></header>
+    );
 }
