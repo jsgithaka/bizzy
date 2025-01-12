@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import { LogoStyles } from '@sharedStyles';
 
 export default function Logo() {
     return (
-        <div>
+        <div className={LogoStyles.Logo}>
             <Image
                 src={'/logo.svg'}
                 alt='The Bizzy Logo'
