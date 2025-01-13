@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 
 interface AuthenticationProps {
     children: ReactNode;
-    value: string;
+    value?: string;
 }
 
 export default function Authentication({
@@ -17,7 +17,7 @@ export default function Authentication({
             id='authentication'
             styles={AuthenticationStyles.Authentication}
         >
-            <Form value={value}>{children}</Form>
+            {value ? <Form value={value}>{children}</Form> : children}
         </View>
     );
 }
