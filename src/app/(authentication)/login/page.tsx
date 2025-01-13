@@ -11,11 +11,11 @@ export default function Login() {
                     <Authentication value='Login'>
                         <Logo />
                         <Input
-                            label='ID'
-                            id='id'
-                            placeholder='Bizzy ID'
+                            label='Email'
+                            id='email'
+                            placeholder='your@email.com'
                             labelTag
-                            type='text'
+                            type='email'
                         />
                         <Input
                             label='Password'
