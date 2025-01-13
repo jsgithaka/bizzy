@@ -1,3 +1,6 @@
+import { InputStyles } from '@sharedStyles';
+import { albertSans } from '@fonts';
+
 interface InputProps {
     id?: string;
     label?: string;
@@ -16,9 +19,10 @@ export default function Input({
     value,
 }: InputProps) {
     return (
-        <div>
+        <div className={InputStyles.Input}>
             {labelTag ? <label htmlFor={id}>{label}</label> : <></>}
             <input
+                className={albertSans.className}
                 id={id}
                 type={type}
                 placeholder={placeholder}

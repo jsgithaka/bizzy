@@ -1,0 +1,36 @@
+.Input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.Input label {
+    font-weight: 700;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.Input input {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+    line-height: 1.5;
+}
+
+.Input input:focus {
+    outline: none;
+    outline: 2px solid black;
+}
+
+.Input input[type='submit'] {
+    font-weight: 700;
+    background-color: black;
+    color: white;
+}
+
+.Input input[type='submit']:hover {
+    cursor: pointer;
+}

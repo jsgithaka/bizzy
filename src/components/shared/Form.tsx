@@ -1,4 +1,5 @@
 import { Input } from '@sharedComponents';
+import { FormStyles } from '@sharedStyles';
 import { ReactNode } from 'react';
 
 interface FormProps {
@@ -9,7 +10,10 @@ interface FormProps {
 
 export default function Form({ children, method, value }: FormProps) {
     return (
-        <form onSubmit={method}>
+        <form
+            onSubmit={method}
+            className={FormStyles.Form}
+        >
             {children}
             <Input
                 type='submit'

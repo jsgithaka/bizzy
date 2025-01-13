@@ -1,5 +1,5 @@
 import { Container, Header, Main, Footer } from '@layoutComponents';
-import { Input } from '@sharedComponents';
+import { Input, Logo } from '@sharedComponents';
 import { Authentication } from '@viewsComponents';
 
 export default function Login() {
@@ -9,6 +9,7 @@ export default function Login() {
             <Main>
                 <Container>
                     <Authentication value='Login'>
+                        <Logo />
                         <Input
                             label='ID'
                             id='id'

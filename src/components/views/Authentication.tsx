@@ -1,5 +1,6 @@
 import { View } from '@layoutComponents';
 import { Form } from '@sharedComponents';
+import { AuthenticationStyles } from '@viewsStyles';
 import { ReactNode } from 'react';
 
 interface AuthenticationProps {
@@ -12,7 +13,10 @@ export default function Authentication({
     value,
 }: AuthenticationProps) {
     return (
-        <View id='authentication'>
+        <View
+            id='authentication'
+            styles={AuthenticationStyles.Authentication}
+        >
             <Form value={value}>{children}</Form>
         </View>
     );
