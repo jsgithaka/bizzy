@@ -3,7 +3,7 @@ interface InputProps {
     label?: string;
     type?: string;
     placeholder?: string;
-    labelTag: boolean;
+    labelTag?: boolean;
     value?: string;
 }
 

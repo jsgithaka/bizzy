@@ -1,5 +1,15 @@
 import { View } from '@layoutComponents';
+import { Form } from '@sharedComponents';
+import { ReactNode } from 'react';
 
-export default function Authentication() {
-    return <View id='authentication'></View>;
+interface AuthenticationProps {
+    children: ReactNode;
+}
+
+export default function Authentication({ children }: AuthenticationProps) {
+    return (
+        <View id='authentication'>
+            <Form>{children}</Form>
+        </View>
+    );
 }
