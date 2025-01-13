@@ -4,12 +4,16 @@ import { ReactNode } from 'react';
 
 interface AuthenticationProps {
     children: ReactNode;
+    value: string;
 }
 
-export default function Authentication({ children }: AuthenticationProps) {
+export default function Authentication({
+    children,
+    value,
+}: AuthenticationProps) {
     return (
         <View id='authentication'>
-            <Form>{children}</Form>
+            <Form value={value}>{children}</Form>
         </View>
     );
 }

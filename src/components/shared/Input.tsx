@@ -13,6 +13,7 @@ export default function Input({
     type,
     placeholder,
     labelTag,
+    value,
 }: InputProps) {
     return (
         <div>
@@ -21,6 +22,7 @@ export default function Input({
                 id={id}
                 type={type}
                 placeholder={placeholder}
+                value={value}
             />
         </div>
     );
