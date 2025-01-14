@@ -4,3 +4,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.Logo img {
+    width: 28px;
+    height: auto;
+}

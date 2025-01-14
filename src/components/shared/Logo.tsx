@@ -7,8 +7,8 @@ export default function Logo() {
             <Image
                 src={'/logo.svg'}
                 alt='The Bizzy Logo'
-                width={32}
-                height={32}
+                width={28}
+                height={28}
             />
         </div>
     );

@@ -1,10 +1,16 @@
 import { HeaderStyles } from '@layoutStyles';
-import { Brand } from '@sharedComponents';
+import { Brand, Navigation } from '@sharedComponents';
+import { ReactNode } from 'react';
 
-export default function Header() {
+interface HeaderProps {
+    children?: ReactNode;
+}
+
+export default function Header({ children }: HeaderProps) {
     return (
         <header className={[HeaderStyles.Header, 'Layout'].join(' ')}>
             <Brand />
+            <Navigation>{children}</Navigation>
         </header>
     );
 }
