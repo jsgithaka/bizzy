@@ -1,11 +1,33 @@
 import { Container, Header, Main, Footer } from '@layoutComponents';
-import { Input, Logo } from '@sharedComponents';
+import { Button, Input, Logo, NavigationItem } from '@sharedComponents';
 import { Authentication } from '@viewsComponents';
 
 export default function Logout() {
     return (
         <>
-            <Header />
+            <Header>
+                <NavigationItem
+                    href='/logout'
+                    name='Logout'
+                    active
+                />
+                <NavigationItem
+                    href='/login'
+                    name='Login'
+                />
+                <NavigationItem
+                    href='/register'
+                    name='Register'
+                />
+                <NavigationItem
+                    href='/recover'
+                    name='Recover'
+                />
+                <Button
+                    href='/'
+                    name='Home'
+                />
+            </Header>
             <Main>
                 <Container>
                     <Authentication value='Login'>

@@ -1,11 +1,29 @@
 import { Container, Header, Main, Footer } from '@layoutComponents';
-import { Input, Logo } from '@sharedComponents';
+import { Button, Input, Logo, NavigationItem } from '@sharedComponents';
 import { Authentication } from '@viewsComponents';
 
 export default function Recover() {
     return (
         <>
-            <Header />
+            <Header>
+                <NavigationItem
+                    href='/login'
+                    name='Login'
+                />
+                <NavigationItem
+                    href='/register'
+                    name='Register'
+                />
+                <NavigationItem
+                    href='/recover'
+                    name='Recover'
+                    active
+                />
+                <Button
+                    href='/'
+                    name='Home'
+                />
+            </Header>
             <Main>
                 <Container>
                     <Authentication value='Recover'>

@@ -1,11 +1,33 @@
 import { Container, Header, Main, Footer } from '@layoutComponents';
-import { Input, Logo } from '@sharedComponents';
+import { Button, Input, Logo, NavigationItem } from '@sharedComponents';
 import { Authentication } from '@viewsComponents';
 
 export default function Reset() {
     return (
         <>
-            <Header />
+            <Header>
+                <NavigationItem
+                    href='/reset'
+                    name='Reset'
+                    active
+                />
+                <NavigationItem
+                    href='/login'
+                    name='Login'
+                />
+                <NavigationItem
+                    href='/register'
+                    name='Register'
+                />
+                <NavigationItem
+                    href='/recover'
+                    name='Recover'
+                />
+                <Button
+                    href='/'
+                    name='Home'
+                />
+            </Header>
             <Main>
                 <Container>
                     <Authentication value='Reset'>

@@ -1,21 +1,21 @@
 import { Container, Header, Main, Footer } from '@layoutComponents';
 import { Button, NavigationItem } from '@sharedComponents';
 
-export default function Home() {
+export default function Landing() {
     return (
         <>
             <Header>
                 <NavigationItem
                     href='/'
-                    name='Home'
+                    name='Landing'
                     active
                 />
                 <NavigationItem
                     href='/'
-                    name='About'
+                    name='Info'
                 />
                 <Button
-                    href='/'
+                    href='/login'
                     name='Account'
                 />
             </Header>
