@@ -1,0 +1,33 @@
+.Breadcrumbs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    height: 48px;
+}
+
+.Breadcrumbs > p {
+    padding: 8px 0px;
+    font-weight: 700;
+}
+
+.BreadcrumbsTrigger {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.BreadcrumbsTrigger p {
+    font-weight: 600;
+}
+
+.BreadcrumbsTrigger:hover {
+    cursor: pointer;
+}

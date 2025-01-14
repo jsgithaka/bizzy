@@ -5,3 +5,4 @@ export { default as Form } from '@/components/shared/Form';
 export { default as Navigation } from '@/components/shared/Navigation/Navigation';
 export { default as NavigationItem } from '@/components/shared/NavigationItem';
 export { default as Button } from '@/components/shared/Button';
+export { default as InfoMenu } from '@/components/shared/InfoMenu';

@@ -16,7 +16,7 @@ export default function NavigationSmall({ children }: NavigationSmallProps) {
         setMenu(!menu);
     };
     return (
-        <div className={NavigationStyles.NavigationSmall}>
+        <aside className={NavigationStyles.NavigationSmall}>
             <div
                 className={NavigationStyles.NavigationSmallHead}
                 onClick={triggerMenu}
@@ -35,6 +35,6 @@ export default function NavigationSmall({ children }: NavigationSmallProps) {
             ) : (
                 <></>
             )}
-        </div>
+        </aside>
     );
 }

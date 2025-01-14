@@ -5,3 +5,4 @@ export { default as FormStyles } from '@/styles/components/shared/Form.module.cs
 export { default as NavigationStyles } from '@/styles/components/shared/Navigation.module.css';
 export { default as NavigationItemStyles } from '@/styles/components/shared/NavigationItem.module.css';
 export { default as ButtonStyles } from '@/styles/components/shared/Button.module.css';
+export { default as InfoMenuStyles } from '@/styles/components/shared/InfoMenu.module.css';
