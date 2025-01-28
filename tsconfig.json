@@ -22,7 +22,7 @@
             "@structuralComponents": ["./src/exports/components/structural.ts"],
             "@structuralStyles": ["./src/exports/components/structural.ts"],
             "@layoutComponents": ["./src/exports/components/layout.ts"],
-            "@layoutStyles": ["./src/exports/components/layout.ts"],
+            "@layoutStyles": ["./src/exports/styles/layout.ts"],
             "@/*": ["./src/*"]
         }
     },
