@@ -1,8 +1,9 @@
+import { DashboardStyles } from '@layoutStyles';
 import { Aside, Header, Main } from '@structuralComponents';
 
 export default function Dashboard() {
     return (
-        <body>
+        <body className={DashboardStyles.Dashboard}>
             <Header />
             <Main />
             <Aside />

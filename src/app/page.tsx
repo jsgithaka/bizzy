@@ -1,5 +1,5 @@
-import { Page } from '@layoutComponents';
+import { Dashboard } from '@layoutComponents';
 
 export default function Landing() {
-    return <Page />;
+    return <Dashboard />;
 }
