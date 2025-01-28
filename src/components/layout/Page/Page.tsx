@@ -1,3 +1,10 @@
+import { Header, Main } from '@structuralComponents';
+
 export default function Page() {
-    return <body></body>;
+    return (
+        <body>
+            <Header />
+            <Main />
+        </body>
+    );
 }
