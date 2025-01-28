@@ -25,6 +25,8 @@
             "@layoutStyles": ["./src/exports/styles/layout.ts"],
             "@sharedComponents": ["./src/exports/components/shared.ts"],
             "@sharedStyles": ["./src/exports/styles/shared.ts"],
+            "@variableFonts": ["./src/exports/fonts/variable.ts"],
+            "@staticFonts": ["./src/exports/fonts/static.ts"],
             "@/*": ["./src/*"]
         }
     },
