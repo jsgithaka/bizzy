@@ -1,0 +1,30 @@
+.Input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    justify-content: center;
+}
+
+.Input > label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Input > input {
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid black;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.Input > input[type='submit'] {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+.Input > input[type='submit']:hover {
+    cursor: pointer;
+}

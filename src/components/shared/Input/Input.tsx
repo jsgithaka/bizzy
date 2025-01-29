@@ -1,3 +1,6 @@
+import { InputStyles } from '@sharedStyles';
+import { dmSans } from '@variableFonts';
+
 export default function Input({
     id,
     label,
@@ -6,9 +9,10 @@ export default function Input({
     placeholder,
 }: InputProps) {
     return (
-        <div>
+        <div className={InputStyles.Input}>
             <label htmlFor={id}>{label}</label>
             <input
+                className={dmSans.className}
                 id={id}
                 type={type}
                 value={value}
