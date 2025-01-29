@@ -27,6 +27,8 @@
             "@sharedStyles": ["./src/exports/styles/shared.ts"],
             "@widgetsComponents": ["./src/exports/components/widgets.ts"],
             "@widgetsStyles": ["./src/exports/styles/widgets.ts"],
+            "@viewsComponents": ["./src/exports/components/views.ts"],
+            "@viewsStyles": ["./src/exports/styles/views.ts"],
             "@variableFonts": ["./src/exports/fonts/variable.ts"],
             "@staticFonts": ["./src/exports/fonts/static.ts"],
             "@/*": ["./src/*"]
