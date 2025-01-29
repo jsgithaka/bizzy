@@ -1,15 +1,11 @@
 'use client';
 
-import { useState } from 'react';
-
+import { useTrigger } from '@hooks';
 import { Icon } from '@sharedComponents';
 import { NavigationSmallStyles } from '@widgetsStyles';
 
 export default function NavigationSmall({ children }: NavigationSmallProps) {
-    const [trigger, setTrigger] = useState<boolean>(false);
-    const toggleTrigger = () => {
-        setTrigger(!trigger);
-    };
+    const { trigger, toggleTrigger } = useTrigger();
     return (
         <div className={NavigationSmallStyles.NavigationSmall}>
             <div

@@ -31,6 +31,7 @@
             "@viewsStyles": ["./src/exports/styles/views.ts"],
             "@variableFonts": ["./src/exports/fonts/variable.ts"],
             "@staticFonts": ["./src/exports/fonts/static.ts"],
+            "@hooks": ["./src/exports/hooks.ts"],
             "@/*": ["./src/*"]
         }
     },
