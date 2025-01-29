@@ -1,29 +1,15 @@
 import { PageStyles } from '@layoutStyles';
-import { Brand, Button, Navigation, NavigationItem } from '@sharedComponents';
+import { Brand, Navigation } from '@sharedComponents';
 import { Header, Main } from '@structuralComponents';
 
-export default function Page() {
+export default function Page({ headerChildren, mainChildren }: PageProps) {
     return (
         <body className={PageStyles.Page}>
             <Header>
                 <Brand />
-                <Navigation>
-                    <NavigationItem
-                        href='/'
-                        name='Landing'
-                        active
-                    />
-                    <NavigationItem
-                        href='/docs'
-                        name='Docs'
-                    />
-                    <Button
-                        href='/login'
-                        name='Login'
-                    />
-                </Navigation>
+                <Navigation>{headerChildren}</Navigation>
             </Header>
-            <Main />
+            <Main>{mainChildren}</Main>
         </body>
     );
 }

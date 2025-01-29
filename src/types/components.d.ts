@@ -38,6 +38,11 @@ declare global {
     interface MainProps {
         children: ReactNode;
     }
+
+    interface PageProps {
+        headerChildren: ReactNode;
+        mainChildren: ReactNode;
+    }
 }
 
 export {};
