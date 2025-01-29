@@ -1,8 +1,8 @@
 import { Page } from '@layoutComponents';
 import { NavigationItem, Button } from '@sharedComponents';
-import { SignIn } from '@viewsComponents';
+import { SignUp } from '@viewsComponents';
 
-export default function Login() {
+export default function Register() {
     return (
         <Page
             headerChildren={
@@ -28,7 +28,7 @@ export default function Login() {
             }
             mainChildren={
                 <>
-                    <SignIn />
+                    <SignUp />
                 </>
             }
         />
