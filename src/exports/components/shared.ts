@@ -4,3 +4,5 @@ export { default as Navigation } from '@/components/shared/Navigation/Navigation
 export { default as NavigationItem } from '@/components/shared/NavigationItem/NavigationItem';
 export { default as Button } from '@/components/shared/Button/Button';
 export { default as Icon } from '@/components/shared/Icon/Icon';
+export { default as Input } from '@/components/shared/Input/Input';
+export { default as Form } from '@/components/shared/Form/Form';

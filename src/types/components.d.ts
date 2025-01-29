@@ -43,6 +43,14 @@ declare global {
         headerChildren: ReactNode;
         mainChildren: ReactNode;
     }
+
+    interface InputProps {
+        id?: string;
+        label?: string;
+        type: string;
+        value?: string;
+        placeholder?: string;
+    }
 }
 
 export {};

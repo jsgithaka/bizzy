@@ -4,3 +4,5 @@ export { default as NavigationStyles } from '@/styles/shared/Navigation/Navigati
 export { default as NavigationItemStyles } from '@/styles/shared/NavigationItem/NavigationItem.module.css';
 export { default as ButtonStyles } from '@/styles/shared/Button/Button.module.css';
 export { default as IconStyles } from '@/styles/shared/Icon/Icon.module.css';
+export { default as InputStyles } from '@/styles/shared/Input/Input.module.css';
+export { default as FormStyles } from '@/styles/shared/Form/Form.module.css';
