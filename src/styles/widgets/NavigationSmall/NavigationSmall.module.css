@@ -24,6 +24,15 @@
     overflow-y: auto;
 }
 
+.NavigationSmallHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    flex-grow: 1;
+}
+
 @media (min-width: 768px) {
     .NavigationSmall {
         display: none;
