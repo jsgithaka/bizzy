@@ -9,6 +9,10 @@ declare global {
         href: string;
         name: string;
     }
+
+    interface NavigationProps {
+        children: ReactNode;
+    }
 }
 
 export {};
