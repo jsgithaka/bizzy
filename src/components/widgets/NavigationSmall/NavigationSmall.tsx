@@ -8,8 +8,8 @@ export default function NavigationSmall({ children }: NavigationSmallProps) {
                 <Icon
                     name='menu'
                     alt='Menu Icon'
-                    width={24}
-                    height={24}
+                    width={16}
+                    height={16}
                 />
             </div>
             <div className={NavigationSmallStyles.NavigationSmallBody}>
