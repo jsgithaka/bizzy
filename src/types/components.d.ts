@@ -4,6 +4,11 @@ declare global {
     interface HeaderProps {
         children: ReactNode;
     }
+
+    interface NavigationItemProps {
+        href: string;
+        name: string;
+    }
 }
 
 export {};
