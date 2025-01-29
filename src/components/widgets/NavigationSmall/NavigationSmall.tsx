@@ -1,10 +1,21 @@
+'use client';
+
+import { useState } from 'react';
+
 import { Icon } from '@sharedComponents';
 import { NavigationSmallStyles } from '@widgetsStyles';
 
 export default function NavigationSmall({ children }: NavigationSmallProps) {
+    const [trigger, setTrigger] = useState<boolean>(false);
+    const toggleTrigger = () => {
+        setTrigger(!trigger);
+    };
     return (
         <div className={NavigationSmallStyles.NavigationSmall}>
-            <div className={NavigationSmallStyles.NavigationSmallHead}>
+            <div
+                className={NavigationSmallStyles.NavigationSmallHead}
+                onClick={toggleTrigger}
+            >
                 <Icon
                     name='menu'
                     alt='Menu Icon'
@@ -12,9 +23,13 @@ export default function NavigationSmall({ children }: NavigationSmallProps) {
                     height={16}
                 />
             </div>
-            <div className={NavigationSmallStyles.NavigationSmallBody}>
-                {children}
-            </div>
+            {trigger ? (
+                <div className={NavigationSmallStyles.NavigationSmallBody}>
+                    {children}
+                </div>
+            ) : (
+                <></>
+            )}
         </div>
     );
 }
