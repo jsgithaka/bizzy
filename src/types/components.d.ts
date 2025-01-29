@@ -13,6 +13,14 @@ declare global {
     interface NavigationProps {
         children: ReactNode;
     }
+
+    interface NavigationLargeProps {
+        children: ReactNode;
+    }
+
+    interface NavigationSmallProps {
+        children: ReactNode;
+    }
 }
 
 export {};

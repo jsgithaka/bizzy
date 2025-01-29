@@ -1,3 +1,3 @@
-export default function NavigationLarge() {
-    return <div></div>;
+export default function NavigationLarge({ children }: NavigationLargeProps) {
+    return <div>{children}</div>;
 }

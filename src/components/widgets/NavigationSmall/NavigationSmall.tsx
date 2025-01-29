@@ -1,3 +1,8 @@
-export default function NavigationSmall() {
-    return <div></div>;
+export default function NavigationSmall({ children }: NavigationSmallProps) {
+    return (
+        <div>
+            <div></div>
+            <div>{children}</div>
+        </div>
+    );
 }
