@@ -22,6 +22,11 @@ declare global {
     interface NavigationSmallProps {
         children: ReactNode;
     }
+
+    interface ButtonProps {
+        href: string;
+        name: string;
+    }
 }
 
 export {};
