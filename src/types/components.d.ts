@@ -34,6 +34,10 @@ declare global {
         width: number;
         height: number;
     }
+
+    interface MainProps {
+        children: ReactNode;
+    }
 }
 
 export {};
