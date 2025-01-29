@@ -1,5 +1,5 @@
 import { PageStyles } from '@layoutStyles';
-import { Brand, Navigation, NavigationItem } from '@sharedComponents';
+import { Brand, Button, Navigation, NavigationItem } from '@sharedComponents';
 import { Header, Main } from '@structuralComponents';
 
 export default function Page() {
@@ -16,6 +16,10 @@ export default function Page() {
                     <NavigationItem
                         href='/docs'
                         name='Docs'
+                    />
+                    <Button
+                        href='/login'
+                        name='Login'
                     />
                 </Navigation>
             </Header>
