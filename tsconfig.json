@@ -20,7 +20,7 @@
         ],
         "paths": {
             "@structuralComponents": ["./src/exports/components/structural.ts"],
-            "@structuralStyles": ["./src/exports/components/structural.ts"],
+            "@structuralStyles": ["./src/exports/styles/structural.ts"],
             "@layoutComponents": ["./src/exports/components/layout.ts"],
             "@layoutStyles": ["./src/exports/styles/layout.ts"],
             "@sharedComponents": ["./src/exports/components/shared.ts"],

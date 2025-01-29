@@ -1,5 +1,6 @@
 import { Page } from '@layoutComponents';
 import { NavigationItem, Button } from '@sharedComponents';
+import { SignIn } from '@viewsComponents';
 
 export default function Login() {
     return (
@@ -25,7 +26,11 @@ export default function Login() {
                     />
                 </>
             }
-            mainChildren={<></>}
+            mainChildren={
+                <>
+                    <SignIn />
+                </>
+            }
         />
     );
 }
