@@ -8,6 +8,7 @@ declare global {
     interface NavigationItemProps {
         href: string;
         name: string;
+        active?: boolean;
     }
 
     interface NavigationProps {

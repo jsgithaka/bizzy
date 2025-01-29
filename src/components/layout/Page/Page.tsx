@@ -11,6 +11,7 @@ export default function Page() {
                     <NavigationItem
                         href='/'
                         name='Landing'
+                        active
                     />
                     <NavigationItem
                         href='/docs'
