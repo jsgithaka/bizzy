@@ -3,3 +3,4 @@ export { default as Brand } from '@/components/shared/Brand/Brand';
 export { default as Navigation } from '@/components/shared/Navigation/Navigation';
 export { default as NavigationItem } from '@/components/shared/NavigationItem/NavigationItem';
 export { default as Button } from '@/components/shared/Button/Button';
+export { default as Icon } from '@/components/shared/Icon/Icon';

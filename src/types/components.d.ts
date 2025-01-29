@@ -27,6 +27,13 @@ declare global {
         href: string;
         name: string;
     }
+
+    interface IconProps {
+        name: string;
+        alt: string;
+        width: number;
+        height: number;
+    }
 }
 
 export {};
