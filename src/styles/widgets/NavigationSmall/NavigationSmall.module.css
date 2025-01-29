@@ -1,15 +1,30 @@
 .NavigationSmall {
-    position: absolute;
-    top: 64px;
-    width: 200px;
-    height: calc(100vh - 64px);
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    flex-grow: 1;
 }
 
-@media (min-width: 769px) {
+.NavigationSmallBody {
+    position: absolute;
+    top: 64px;
+    height: calc(100vh - 64px - 32px);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 64px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+}
+
+@media (min-width: 768px) {
     .NavigationSmall {
         display: none;
     }

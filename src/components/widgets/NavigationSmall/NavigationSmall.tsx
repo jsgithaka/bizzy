@@ -3,8 +3,10 @@ import { NavigationSmallStyles } from '@widgetsStyles';
 export default function NavigationSmall({ children }: NavigationSmallProps) {
     return (
         <div className={NavigationSmallStyles.NavigationSmall}>
-            <div></div>
-            <div>{children}</div>
+            <div className={NavigationSmallStyles.NavigationSmallHead}></div>
+            <div className={NavigationSmallStyles.NavigationSmallBody}>
+                {children}
+            </div>
         </div>
     );
 }
