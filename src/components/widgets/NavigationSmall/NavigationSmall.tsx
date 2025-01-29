@@ -17,7 +17,7 @@ export default function NavigationSmall({ children }: NavigationSmallProps) {
                 onClick={toggleTrigger}
             >
                 <Icon
-                    name='menu'
+                    name={trigger ? 'cancel' : 'menu'}
                     alt='Menu Icon'
                     width={16}
                     height={16}
