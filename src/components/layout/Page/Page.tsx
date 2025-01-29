@@ -1,6 +1,6 @@
 import { PageStyles } from '@layoutStyles';
 import { Brand, Navigation } from '@sharedComponents';
-import { Header, Main } from '@structuralComponents';
+import { Footer, Header, Main } from '@structuralComponents';
 
 export default function Page({ headerChildren, mainChildren }: PageProps) {
     return (
@@ -9,7 +9,10 @@ export default function Page({ headerChildren, mainChildren }: PageProps) {
                 <Brand />
                 <Navigation>{headerChildren}</Navigation>
             </Header>
-            <Main>{mainChildren}</Main>
+            <Main>
+                {mainChildren}
+                <Footer />
+            </Main>
         </body>
     );
 }

@@ -10,7 +10,7 @@ export default function Input({
 }: InputProps) {
     return (
         <div className={InputStyles.Input}>
-            <label htmlFor={id}>{label}</label>
+            {label ? <label htmlFor={id}>{label}</label> : <></>}
             <input
                 className={dmSans.className}
                 id={id}
