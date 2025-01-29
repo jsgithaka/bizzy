@@ -56,6 +56,12 @@ declare global {
         children: ReactNode;
         value: value;
     }
+
+    interface ViewProps {
+        id: string;
+        styles: string;
+        children: ReactNode;
+    }
 }
 
 export {};
