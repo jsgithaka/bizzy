@@ -51,6 +51,11 @@ declare global {
         value?: string;
         placeholder?: string;
     }
+
+    interface FormProps {
+        children: ReactNode;
+        value: value;
+    }
 }
 
 export {};
