@@ -6,3 +6,4 @@ export { default as Button } from '@/components/shared/Button/Button';
 export { default as Icon } from '@/components/shared/Icon/Icon';
 export { default as Input } from '@/components/shared/Input/Input';
 export { default as Form } from '@/components/shared/Form/Form';
+export { default as Message } from '@/components/shared/Message/Message';
