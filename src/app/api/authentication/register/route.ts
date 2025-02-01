@@ -9,10 +9,7 @@ export async function POST(request: NextRequest) {
                     'Kindly ensure that `Password` and `Confirm Password` input fields match.',
             });
         }
-        return NextResponse.json({
-            information:
-                'All registration credentials have been devilered successfully!',
-        });
+        return NextResponse.redirect(new URL('/login', request.url));
     } catch (error) {
         return NextResponse.json({ test: 'okay' });
     }

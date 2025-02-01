@@ -19,8 +19,12 @@ export default function SignUp() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(form),
         });
-        const information = await response.json();
-        setInformation(information.information);
+        if (response.redirected) {
+            window.location.href = response.url;
+        } else {
+            const information = await response.json();
+            setInformation(information.information);
+        }
     };
     return (
         <View
