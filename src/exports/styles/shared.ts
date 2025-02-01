@@ -6,3 +6,4 @@ export { default as ButtonStyles } from '@/styles/shared/Button/Button.module.cs
 export { default as IconStyles } from '@/styles/shared/Icon/Icon.module.css';
 export { default as InputStyles } from '@/styles/shared/Input/Input.module.css';
 export { default as FormStyles } from '@/styles/shared/Form/Form.module.css';
+export { default as MessageStyles } from '@/styles/shared/Message/Message.module.css';
