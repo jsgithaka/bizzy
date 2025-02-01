@@ -1,4 +1,4 @@
-import { Icon, Logo } from '@sharedComponents';
+import { Button, Icon } from '@sharedComponents';
 import { MessageStyles } from '@sharedStyles';
 
 export default function Message() {
@@ -13,8 +13,23 @@ export default function Message() {
                 />
             </div>
             <div className={MessageStyles.MessageBody}>
-                <Logo />
-                <p>This is a message.</p>
+                <div>
+                    <Icon
+                        name='bell'
+                        alt='Bell Icon'
+                        width={20}
+                        height={20}
+                    />
+                    <h1>Error</h1>
+                </div>
+                <p>
+                    This is a message. This is a message. This is a message.
+                    This is a message.
+                </p>
+                <Button
+                    href=''
+                    name='More'
+                />
             </div>
         </div>
     );
