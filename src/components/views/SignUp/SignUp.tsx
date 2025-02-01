@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-import { Form, Input, Logo } from '@sharedComponents';
+import { Form, Input, Logo, Message } from '@sharedComponents';
 import { View } from '@structuralComponents';
 import { SignUpStyles } from '@viewsStyles';
 
@@ -32,7 +32,7 @@ export default function SignUp() {
             styles={SignUpStyles.SignUp}
         >
             <Logo />
-            {information && <p>{information}</p>}
+            {information && <Message />}
             <Form
                 value='Register'
                 method={handleRegister}
