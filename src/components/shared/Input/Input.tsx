@@ -7,6 +7,7 @@ export default function Input({
     type,
     value,
     placeholder,
+    method,
 }: InputProps) {
     return (
         <div className={InputStyles.Input}>
@@ -17,6 +18,7 @@ export default function Input({
                 type={type}
                 value={value}
                 placeholder={placeholder}
+                onChange={method}
             />
         </div>
     );

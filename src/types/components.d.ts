@@ -50,11 +50,13 @@ declare global {
         type: string;
         value?: string;
         placeholder?: string;
+        method?: (event) => void;
     }
 
     interface FormProps {
         children: ReactNode;
         value: value;
+        method?: (event) => void;
     }
 
     interface ViewProps {

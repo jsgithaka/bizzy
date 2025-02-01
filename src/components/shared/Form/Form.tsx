@@ -1,11 +1,11 @@
 import { Input } from '@sharedComponents';
 import { FormStyles } from '@sharedStyles';
 
-export default function Form({ children, value }: FormProps) {
+export default function Form({ children, value, method }: FormProps) {
     return (
         <form
-            action=''
             className={FormStyles.Form}
+            onSubmit={method}
         >
             {children}
             <Input
